@@ -7,10 +7,11 @@
     --requiredColor: #E65400;
     --tertiaryColor: #FDB913;
 
+    --contentWidth: 1170px;
+
     color: var(--darkColor);
     background-color: var(--lightColor);
 }
-
 
 h1 {
     font-size: 40px;
@@ -34,8 +35,56 @@ a {
     color: var(--accentColor)
 }
 
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.headerContent {
+    width: 100%;
+    max-width: var(--contentWidth);
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainContent {
+    display: flex;
+    justify-content: center;
+}
+
+.contentWidth {
+    width: 100%;
+    max-width: var(--contentWidth);
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    background-image: url("images/overlay.svg") ,url("images/headerDesktop1920.png");
+    background-repeat: repeat-x, no-repeat;
+    background-color: var(--darkColor);
+    height: 470px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.heroContent {
+    width: 100%;
+    max-width: var(--contentWidth);
+}
+
+.featuredContent {
+    width: 760px;
+}
+
 .sideBar {
     box-shadow: 0px 3px 6px #00000029;
+    width: 380px;
+    height: 575px;
+    margin-top: -404px;
+    background-color: var(--lightColor);
 }
 
 .sideBar h3 {
@@ -53,7 +102,8 @@ a {
     display: inline-block;
 }
 
-input, select {
+input,
+select {
     border: 1px solid #D6D6D6;
 }
 
@@ -85,6 +135,7 @@ footer {
 
 footer hr {
     width: 100%;
+    max-width: var(--contentWidth);
     height: 1px;
     background-color: #626262;
     border: none;
