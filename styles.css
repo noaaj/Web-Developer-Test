@@ -18,6 +18,7 @@ html {
 
 h1 {
     font-size: 40px;
+    font-weight: normal;
     line-height: 55px;
     color: var(--lightColor);
 }
@@ -76,7 +77,7 @@ header {
 .heroContent {
     width: 100%;
     max-width: var(--contentWidth);
-    padding: 13px 0px 10px 0px;
+    padding: 13px 0px 37px 0px;
 }
 
 /*Main Body Content Styling */
@@ -275,6 +276,7 @@ footer hr {
     }
 
     .heroContent {
+        padding: 13px 0px 10px 0px;
         background-color: rgb(0, 0, 0, .6);
     }
 
