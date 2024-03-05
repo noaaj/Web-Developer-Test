@@ -8,6 +8,7 @@
     <title>Web Developer - Test - Angel Noa</title>
     <meta name="description" content="Web Developer test for Angel Noa.">
     <meta name="author" content="Angel Noa">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,34 +56,43 @@
                             sollicitudin est rhoncus quis. Orci varius natoque penatibus et magnis dis parturient
                             montes,
                             nascetur ridiculus mus. Aliquam eget arcu quis ante tincidunt dignissim.</p>
-                        <img src="images/Icon - Disclaimer - Orange.svg" alt="Disclaimer"> <a href=""
-                            class="requestInfo">Request Additional Information</a>
                     </section>
+                    <div class="requestInfo">
+                        <img src="images/Icon - Disclaimer - Orange.svg" alt="Disclaimer"><a href="">Request Additional
+                            Information</a>
+                    </div>
                 </section>
                 <section class="sideBar">
                     <h3>Request Info</h3>
                     <p>Fill out the form for more information or call us at <a href="">844.716.1492</a>.</p>
                     <hr>
                     <form>
-                        <label for="program" class="formLabel">SELECT ONE: <span
-                                class="requiredAsterisk">*</span></label><br>
-                        <select id="program" name="program" required>
-                            <option value="" disabled selected hidden>Choose a program</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select><br>
-                        <label for="name" class="formLabel">YOUR NAME <span
-                                class="requiredAsterisk">*</span></label><br>
-                        <input type="text" id="name" name="name" placeholder="Your Name" required><br>
-                        <span class="formLabel">CHECKBOXES</span><br>
-                        <input type="checkbox" name="checkboxes" id="box1" value="box1">
-                        <label for="box1">Box 1</label><br>
-                        <input type="checkbox" name="checkboxes" id="box2" value="box2">
-                        <label for="box2">Box 2</label><br>
-                        <input type="checkbox" name="checkboxes" id="box3" value="box3">
-                        <label for="box3">Box 3</label><br>
+                        <div class="singleInput">
+                            <label for="program" class="formLabel">SELECT ONE: <span
+                                    class="requiredAsterisk">*</span></label><br>
+                            <select id="program" name="program" class="fullInput" required>
+                                <option value="" disabled selected hidden>Choose a program</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select><br>
+                        </div>
+                        <div class="singleInput">
+                            <label for="name" class="formLabel">YOUR NAME <span
+                                    class="requiredAsterisk">*</span></label><br>
+                            <input type="text" id="name" name="name" placeholder="Your Name" class="fullInput"
+                                required><br>
+                        </div>
+                        <div class="singleInput">
+                            <span class="formLabel">CHECKBOXES</span><br>
+                            <input type="checkbox" name="checkboxes" id="box1" value="box1">
+                            <label for="box1">Box 1</label><br>
+                            <input type="checkbox" name="checkboxes" id="box2" value="box2">
+                            <label for="box2">Box 2</label><br>
+                            <input type="checkbox" name="checkboxes" id="box3" value="box3">
+                            <label for="box3">Box 3</label><br>
+                        </div>
                         <input type="submit" value="SUBMIT REQUEST" class="submitButton">
                     </form>
                 </section>
@@ -91,12 +101,10 @@
     </main>
     <footer>
         <section class="footerTop">
-            <img src="images/Logo - White.svg" alt="Full Sail University Logo"><br>
+            <img src="images/Logo - White.svg" alt="Full Sail University Logo" height="24px">
             <img src="images/If you’re serious about your dream, we’ll take your dream seriously.TM.svg"
-                alt="If you’re serious about your dream, we’ll take your dream seriously.">
+                alt="If you’re serious about your dream, we’ll take your dream seriously." height="27px">
             <hr>
-        </section>
-        <section class="footerBody">
             <p>For more information about Full Sail’s programs, courses, and studios, as well as details about
                 financial
                 aid and career development, please visit our website at www.fullsail.edu</p>
