@@ -1,3 +1,5 @@
+/* Global Styles for the Whole Document 8*/
+
 :root {
     font: normal normal normal 16px/26px Open Sans;
     --lightColor: #FFFFFF;
@@ -36,6 +38,8 @@ a {
     color: var(--accentColor)
 }
 
+/* Header Styling */
+
 header {
     width: 100%;
     display: flex;
@@ -56,6 +60,8 @@ header {
     padding: 13px 19px;
 }
 
+/*Hero Image Section Styling */
+
 .hero {
     background-image: url("images/overlay.svg"), url("images/headerDesktop3840.png");
     background-repeat: repeat-x, no-repeat;
@@ -72,6 +78,8 @@ header {
     max-width: var(--contentWidth);
     padding: 13px 0px 10px 0px;
 }
+
+/*Main Body Content Styling */
 
 .mainContent {
     display: flex;
@@ -90,6 +98,14 @@ header {
     width: 760px;
 }
 
+.itemContent {
+    padding-top: 40px;
+}
+
+.itemContent h3 {
+    padding-bottom: 20px;
+}
+
 .requestInfo {
     padding-top: 40px;
     text-decoration: underline;
@@ -100,13 +116,7 @@ header {
     padding-right: 12px;
 }
 
-.itemContent {
-    padding-top: 40px;
-}
-
-.itemContent h3 {
-    padding-bottom: 20px;
-}
+/* Sidebar Styling */
 
 .sideBar {
     box-shadow: 0px 3px 6px #00000029;
@@ -137,8 +147,25 @@ header {
     margin-top: 32px;
 }
 
+/* Form Styling */
+
 form {
     padding-top: 17px;
+}
+
+.singleInput {
+    padding-top: 12px;
+}
+
+.formLabel {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 5px 10px;
+}
+
+.requiredAsterisk {
+    color: var(--requiredColor);
 }
 
 .fullInput {
@@ -152,17 +179,6 @@ select {
 
 input[type="checkbox"] {
     accent-color: var(--tertiaryColor);
-}
-
-.singleInput {
-    padding-top: 12px;
-}
-
-.formLabel {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 19px;
-    padding: 5px 10px;
 }
 
 .submitButton {
@@ -183,9 +199,7 @@ input[type="checkbox"] {
     background-color: var(--lightColor);
 }
 
-.requiredAsterisk {
-    color: var(--requiredColor);
-}
+/*Footer Styling */
 
 footer {
     font-size: 12px;
@@ -225,6 +239,8 @@ footer hr {
     padding: 20px 0px;
 }
 
+/*Mediq Queries for Responsiveness*/
+
 @media screen and (max-width: 1920px) {
     .hero {
         background-image: url("images/overlay.svg"), url("images/headerDesktop1920.png");
@@ -255,7 +271,6 @@ footer hr {
     }
 
     .hero {
-        
         text-align: center;
     }
 
@@ -275,7 +290,6 @@ footer hr {
 
     .mainContent {
         padding: 40px 10px;
-
     }
 
     .featuredContent {
@@ -299,9 +313,6 @@ footer hr {
     .footerTop {
         min-height: 604px;
     }
-
-    
-
 }
 
 @media screen and (max-width: 780px) {
