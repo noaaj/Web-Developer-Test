@@ -1,14 +1,11 @@
 :root {
     font: normal normal normal 16px/26px Open Sans;
-
     --lightColor: #FFFFFF;
     --darkColor: #505050;
     --accentColor: #CC4B00;
     --requiredColor: #E65400;
     --tertiaryColor: #FDB913;
-
     --contentWidth: 1170px;
-
     color: var(--darkColor);
     background-color: var(--lightColor);
 }
@@ -40,7 +37,6 @@ header {
     display: flex;
     justify-content: center;
     padding: 10px 0px;
-    ;
 }
 
 .headerContent {
@@ -50,18 +46,10 @@ header {
     justify-content: space-between;
 }
 
-.mainContent {
-    display: flex;
-    justify-content: center;
-    padding: 40px 0px;
-
-}
-
-.contentWidth {
-    width: 100%;
-    max-width: var(--contentWidth);
-    display: flex;
-    justify-content: space-between;
+.infoImage {
+    display: none;
+    background-color: var(--tertiaryColor);
+    padding: 13px 19px;
 }
 
 .hero {
@@ -72,12 +60,26 @@ header {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    background-size: cover, cover;
 }
 
 .heroContent {
     width: 100%;
     max-width: var(--contentWidth);
-    padding: 37px 0px;
+    padding: 13px 0px 10px 0px;
+}
+
+.mainContent {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.contentWidth {
+    width: 100%;
+    max-width: var(--contentWidth);
+    display: flex;
+    justify-content: space-between;
 }
 
 .featuredContent {
@@ -96,6 +98,10 @@ header {
 
 .itemContent {
     padding-top: 40px;
+}
+
+.itemContent h3 {
+    padding-bottom: 20px;
 }
 
 .sideBar {
@@ -179,6 +185,10 @@ footer {
     width: 100%;
 }
 
+.dreamImage {
+    max-height: 27px;
+}
+
 footer hr {
     width: 100%;
     max-width: var(--contentWidth);
@@ -194,6 +204,7 @@ footer hr {
     justify-content: space-evenly;
     align-items: center;
     min-height: 398px;
+    padding: 0px 15px;
 }
 
 .footerCopyright {
@@ -209,14 +220,98 @@ footer hr {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    :root {
+        --contentWidth: 100%;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    header {
+        padding: 0px;
+    }
+
+    .headerLogo {
+        padding-left: 15px;
+    }
+
+    .infoImage {
+        display: block;
+    }
+
+    .hero {
+        
+        text-align: center;
+    }
+
+    .heroContent {
+        background-color: rgb(0, 0, 0, .6);
+    }
+
+    .heroContent h2 {
+        color: white;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .contentWidth {
+        flex-direction: column;
+    }
+
+    .mainContent {
+        padding: 40px 10px;
+
+    }
+
+    .featuredContent {
+        width: 100%;
+    }
+
+    .introContent {
+        padding-bottom: 24px;
+    }
+
+    .itemContent {
+        background-color: #F1F1F0;
+        padding: 21px 20px 41px 20px;
+    }
+
+    .sideBar {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .footerTop {
+        min-height: 604px;
+    }
+
+    
+
+}
+
 @media screen and (max-width: 780px) {
     .hero {
         background-image: url("images/overlay.svg"), url("images/headerMobile780.png");
+        height: 440px;
+    }
+
+    .dreamImage {
+        content: url("images/dream720.png");
+        max-height: 100px;
     }
 }
 
 @media screen and (max-width: 390px) {
     .hero {
         background-image: url("images/overlay.svg"), url("images/headerMobile390.png");
+        height: 220px;
+    }
+
+    .dreamImage {
+        content: url("images/dream360.png");
     }
 }
