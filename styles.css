@@ -1,0 +1,53 @@
+html {
+    font: normal normal normal 16px/26px Open Sans;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 55px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h3 {
+    font-weight: 300; 
+    font-size: 24px;
+}
+
+.sideBar h3 {
+    font: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    font-family: 'Forum';
+}
+
+.formLabel {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.submitButton {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+footer {
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.footerCopyright {
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.requestInfo {
+    text-decoration: underline;
+}
